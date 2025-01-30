@@ -1,0 +1,38 @@
+.about-me.animation-load{
+    opacity:0;
+    transition:opacity .3s linear
+}
+
+.about-me.animation-load.active{
+    opacity:1;
+}
+
+.main-header.animation-load{
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: transform .5s  ease, opacity .6s linear
+}
+
+.main-header.animation-load.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.projects.animation-load .wrapper-proyects{
+    transform: translateY(250px);
+    opacity: 0;
+    transition: transform .5s ease-out , opacity 1s ease-out;
+}
+
+.projects.animation-load.active .wrapper-proyects{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.projects.animation-load .filter-proyects{
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.projects.animation-load.active .filter-proyects{
+    opacity: 1;
+}
